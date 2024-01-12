@@ -86,3 +86,24 @@ do {
     comandos
     incremento
 } while ( condicao );
+
+//Comparadores logicos
+== //compara valores igual
+=== //compara valor e tipo iguais
+!= //valor diferente
+!== //valor e tipo diferente
+
+//exemplo condicional
+let idade = prompt("Digite sua idade: ")
+idade = parseInt(idade)
+let estaAcompanhada = false
+
+if (idade >= 18) {
+    console.log("Pode entrar");
+    else if (estaAcompanhada == true) {
+        console.log("Pode entrar pois esta acompanhada.")
+        else {
+            console.log("Não pode entrar, pois é menor de idade e não está acompanhada.")
+        }
+    }
+}
