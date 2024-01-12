@@ -66,3 +66,23 @@ TecWeb.push["Adicional"] //adiciona mais um item ao array, retorna a quantidade 
 //Os array nao sao um tipo nativo do javascript. No typeof ele retorna object que é o tipo mais primitivo do JS. O array do JS não precisa ser homogeneo, comporta diversos tipos.
 
 
+//Laços
+for (variavel i = 0; i < nomes.length; i++) { //(posição atual do array; posição final para parar o laço; incremento)
+    comandos
+}
+//no laço for não é preciso se preocupar com o tamanho do array, porque ao ultrapassar ele aparece como undefined
+//mesmo resultado com menos codigo:
+for (indiceAtual in nomes(array)) {
+    console.log("O nome é: " + nomes(array)[indiceAtual])
+}
+
+
+while ( condicao ) {
+    comandos
+    incremento++
+}
+
+do {
+    comandos
+    incremento
+} while ( condicao );
