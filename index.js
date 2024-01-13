@@ -107,3 +107,21 @@ if (idade >= 18) {
         }
     }
 }
+
+//em JS podemos verificar se uma condição é verdadeira ou falsa de duas maneiras:
+(condicao == true) ou (condicao)
+(condicão != false) ou (!condicao)
+
+//ao utilizar o operador ternário, pode-se adotar outra estrutura
+//É possivel escrever algo como: let podeEntrar = if (idade>=18) {true} else {false} com o operador ternario:
+let podeEntrar = idade >= 18 ? true : false
+
+//function
+let base = prompt("Valor da base? ");
+let altura = prompt("Valor da altura? ");
+
+function calculaArea (base, altura) {
+    return base * altura
+}
+
+console.log("A área calculada é " + calculaArea(base, altura));
