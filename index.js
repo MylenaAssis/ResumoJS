@@ -156,3 +156,16 @@ document.querySelectorAll('input[type=number]')
 if (document.querySelector('h3')) //o if serve para evitar que a interação seja feita com elemento que nao existe
 
 document.head //acessar conteudo do head
+
+//validações customizadas
+//validação de campo obrigatório é feita pelo HTML, mas para obrigar a preencher nome completo, por exemplo, precisa do JS
+//acessando o conteudo do campo nome completo:
+nomecompleto.value
+//acessando como um array:
+nomecompleto.value.split(' ')
+nomecompleto.value.split(' ').length //diz o tamanho do array
+//a partir do tamanho do array determinado na condição acima, desativamos o button com:
+document.getElementById('btn-depositar').disabled = true
+//resultado:
+document.getElementById('btn-depositar').disabled = nomecompleto.value.split(' ').length < 3
+
