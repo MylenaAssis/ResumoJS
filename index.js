@@ -126,6 +126,33 @@ function calculaArea (base, altura) {
 
 console.log("A área calculada é " + calculaArea(base, altura));
 
+//INTEGRANDO HTML E JS
+
+//utilidades devtools
 window.location.href //recupera a URL da pagina
 window.location.pathname //pega a parte do URL que vem depois do domínio
 window.history.back() //acessar a página anterior
+
+//DOM - Document Object Model
+document.title = "Conteudo" //alteração de conteudo do DOM com JS
+document.body //comando que mostra todo o html da pagina
+document.body.innerHTML = "conteudo" //inserir conteúdo HTML na página
+
+//selecionando elemento com js pelo devtool
+document.querySelector('input[type+number]')//seleciona elemento de input number
+
+//Podemos selecionar um ou mais elementos através de alguns critérios:
+//Nome da tag– retorna todos os elementos da tag: 
+document.getElementsByTagName('input’) 
+//ID – retorna apenas um elemento: 
+document.getElementById('btn-depositar’)
+//Classe –retorna todos os elementos que usam a classe: 
+document.getElementsByClassName('container’)
+//Seletores especiais: 
+document.querySelector('input[type=number]’) 
+//para retornar todos os itens que atendam ao critério da busca: 
+document.querySelectorAll('input[type=number]')
+
+if (document.querySelector('h3')) //o if serve para evitar que a interação seja feita com elemento que nao existe
+
+document.head //acessar conteudo do head
