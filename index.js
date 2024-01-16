@@ -125,3 +125,7 @@ function calculaArea (base, altura) {
 }
 
 console.log("A área calculada é " + calculaArea(base, altura));
+
+window.location.href //recupera a URL da pagina
+window.location.pathname //pega a parte do URL que vem depois do domínio
+window.history.back() //acessar a página anterior
